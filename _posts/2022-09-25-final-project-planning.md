@@ -18,3 +18,25 @@ Our group wants to make a project that serves as a helpful tool for the ASB clas
 2. Decide what funtions/pieces we will need to accomplish this
 3. Code, code, code!
 4. *continue to use scrum board and process!*
+
+# Brain Write
+
+Problem-based-learning program: Idea is around ASB Merchandise Commissioner Management. 
+- A system where an asb user can keep track of merchandise.
+   - merchandise stock
+   - design organization
+   - merchandise orders
+   - emails
+- Attributes:
+   - user input for orders and order descriptions (also customer name and email)
+   - commissioner info (name, grade, position, etc.)
+     - commissioner password (one password for everyone)
+   - created a pre-written email draft off of a button to a specific customer
+   - Use loops, variables, and lists to keep track of merchandise stock (have a return message for when reaches zero)
+   - use JSON to make a table of all merch and customer info
+   - HTML nav bars and menus
+   - new page for merch designs, have a section for new ideas, in progress, and finalized desings (either have input for images or text imput of links to design pages)
+
+
+
+
