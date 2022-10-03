@@ -11,3 +11,4 @@ categories: [week 5]
 
 
 ![]({{site.baseurl}}/images/Our Wire Frame.png)
+![]({{site.baseurl}}/images/Our UML.png)
