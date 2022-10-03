@@ -1,12 +1,12 @@
 ---
-title: Final Project Wire Frame
+title: Final Project Wire Frame and UML
 toc: true
 comments: true
 layout: post
-description: Planning the layout and design of our final project.
+description: Planning the layout, design, and code for our final project.
 permalink: /finalplanning/wireframe
 image: /images/Our Wire Frame.png
-categories: [week 5]
+categories: [week 6]
 ---
 
 
