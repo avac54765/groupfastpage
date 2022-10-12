@@ -12,7 +12,7 @@ categories: [week 7]
 # College Board Criteria
 - **<mark>Program Purpose and Function</mark>**: To assist an ASB merch commisioner with the merchandise designing, tracking, and contacting processes.
 
-- <mark>**Data Abstraction**</mark>: Collect orders and data (names and info) from customers
+- **<mark>Data Abstraction</mark>**: Collect orders and data (names and info) from customers
 
 - **<mark>Managing Complexity</mark>**: Use a list with customer information (names and orders) and use a list for merch counting
 
