@@ -39,4 +39,7 @@ Problem-based-learning program: Idea is around ASB Merchandise Commissioner Mana
 
 
 
+# Agile Development
 
+- Requirements: things listed above, constraints: making the system too complicated
+- impact: this project will help make the work of a merchandise commissioner easier and more organized
