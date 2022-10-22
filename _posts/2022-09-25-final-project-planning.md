@@ -43,3 +43,14 @@ Problem-based-learning program: Idea is around ASB Merchandise Commissioner Mana
 
 - Requirements: things listed above, constraints: making the system too complicated
 - impact: this project will help make the work of a merchandise commissioner easier and more organized
+
+
+
+# User Experience
+
+1. Home page (design fastpage homepage)
+2. submenu on home page leading to same pages as nav bar
+3. has navigation bar with :
+   - order data (customer name, quantity ordered, item ordered, income)
+   - stock (keeps track of inventory)
+   - email page (prepared draft ready to be edited and sent out)
