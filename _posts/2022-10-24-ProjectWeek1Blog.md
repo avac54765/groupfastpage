@@ -22,3 +22,7 @@ categories: [week 9]
 - syntax errors to think about: 
  - merch commisioner will want to be able to input their actual quantity of items (not randomized)
  - what happens if their quanitity goes below 0? (-1 function)
+
+
+ ## Other's Videos
+ - 
