@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Writing/Testing Frontend Code for Project | Cool Coders Fastpage</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Writing/Testing Frontend Code for Project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="?Writing code on a notebook to develop and test code before implementing on project." />
+<meta property="og:description" content="?Writing code on a notebook to develop and test code before implementing on project." />
+<link rel="canonical" href="https://coolcoders.github.io/groupfastpage/projectcode/notebook" />
+<meta property="og:url" content="https://coolcoders.github.io/groupfastpage/projectcode/notebook" />
+<meta property="og:site_name" content="Cool Coders Fastpage" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-25T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Writing/Testing Frontend Code for Project" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-25T00:00:00-05:00","datePublished":"2022-10-25T00:00:00-05:00","description":"?Writing code on a notebook to develop and test code before implementing on project.","headline":"Writing/Testing Frontend Code for Project","mainEntityOfPage":{"@type":"WebPage","@id":"https://coolcoders.github.io/groupfastpage/projectcode/notebook"},"url":"https://coolcoders.github.io/groupfastpage/projectcode/notebook"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/groupfastpage/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://coolcoders.github.io/groupfastpage/feed.xml" title="Cool Coders Fastpage" /><link rel="shortcut icon" type="image/x-icon" href="/groupfastpage/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/groupfastpage/">Cool Coders Fastpage</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/groupfastpage/api/overview">API</a><a class="page-link" href="/groupfastpage/about/">About Me</a><a class="page-link" href="/groupfastpage/search/">Search</a><a class="page-link" href="/groupfastpage/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Writing/Testing Frontend Code for Project</h1><p class="page-description">?Writing code on a notebook to develop and test code before implementing on project.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-25T00:00:00-05:00" itemprop="datePublished">
+        Oct 25, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      6 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/groupfastpage/categories/#week 10">week 10</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/avac54765, alexac54765, bushku, antonyrc6/groupfastpage/tree/master/_notebooks/2022-10-25-projectcode.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/groupfastpage/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/avac54765, alexac54765, bushku, antonyrc6/groupfastpage/master?filepath=_notebooks%2F2022-10-25-projectcode.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/groupfastpage/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/avac54765, alexac54765, bushku, antonyrc6/groupfastpage/blob/master/_notebooks/2022-10-25-projectcode.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/groupfastpage/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Favac54765, alexac54765, bushku, antonyrc6%2Fgroupfastpage%2Fblob%2Fmaster%2F_notebooks%2F2022-10-25-projectcode.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/groupfastpage/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Button-Ideas-for-Email">Button Ideas for Email </a></li>
+<li class="toc-entry toc-h1"><a href="#Pop-up-Modal-Box-(for-when-button-is-clicked)">Pop-up Modal Box (for when button is clicked) </a></li>
+<li class="toc-entry toc-h1"><a href="#A-To-Do-list-for-the-Merchandise-User">A To-Do list for the Merchandise User </a></li>
+<li class="toc-entry toc-h1"><a href="#Parallax-Scrolling-(fixed-back-image)--maybe-for-Homepage/-background-of-different-pages-(add-button-on-image??)">Parallax Scrolling (fixed back image)- maybe for Homepage/ background of different pages (add button on image??) </a></li>
+<li class="toc-entry toc-h1"><a href="#Pill-Button">Pill Button </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-10-25-projectcode.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Button-Ideas-for-Email">
+<a class="anchor" href="#Button-Ideas-for-Email" aria-hidden="true"><span class="octicon octicon-link"></span></a>Button Ideas for Email<a class="anchor-link" href="#Button-Ideas-for-Email"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">let</span> <span class="n">emailbtn</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">"button"</span><span class="p">);</span>
+<span class="n">emailbtn</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="s2">"Click here for an email draft"</span><span class="p">;</span>
+<span class="n">emailbtn</span><span class="o">.</span><span class="n">onclick</span> <span class="o">=</span> <span class="n">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">alert</span><span class="p">(</span><span class="s2">"Email button clicked"</span><span class="p">);</span>
+    <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Email button clicked"</span><span class="p">);</span>
+<span class="p">};</span>
+<span class="n">document</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">emailbtn</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&lt;!</span>DOCTYPE html&gt;
+<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span> <span class="n">Email</span> <span class="n">Draft</span> <span class="n">Button</span> <span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"Button"</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+        <span class="n">const</span> <span class="n">emailbtn</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"button"</span><span class="p">);</span>
+        <span class="n">emailbtn</span><span class="o">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">alert</span><span class="p">(</span><span class="s2">"Button clicked"</span><span class="p">);</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"email button clicked"</span><span class="p">)</span>
+        <span class="p">})</span>
+    <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>        
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [3]</span>
+<span class="ansi-red-fg">    &lt;!DOCTYPE html&gt;</span>
+    ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&lt;!</span>-- info from w3schools--&gt;
+
+<span class="o">&lt;!</span>DOCTYPE html&gt;
+<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">meta</span> <span class="n">name</span><span class="o">=</span><span class="s2">"viewport"</span> <span class="n">content</span><span class="o">=</span><span class="s2">"width=device-width, initial-scale=1"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="o">.</span><span class="n">button</span> <span class="p">{</span>
+  <span class="n">padding</span><span class="p">:</span> <span class="mi">15</span><span class="n">px</span> <span class="mi">25</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">24</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">text</span><span class="o">-</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+  <span class="n">cursor</span><span class="p">:</span> <span class="n">pointer</span><span class="p">;</span>
+  <span class="n">outline</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+  <span class="n">color</span><span class="p">:</span> <span class="c1">#fff;</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#04AA6D;</span>
+  <span class="n">border</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+  <span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">:</span> <span class="mi">15</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">9</span><span class="n">px</span> <span class="c1">#999;</span>
+<span class="p">}</span>
+
+<span class="o">.</span><span class="n">button</span><span class="p">:</span><span class="n">hover</span> <span class="p">{</span><span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#3e8e41}</span>
+
+<span class="o">.</span><span class="n">button</span><span class="p">:</span><span class="n">active</span> <span class="p">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#3e8e41;</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">5</span><span class="n">px</span> <span class="c1">#666;</span>
+  <span class="n">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="mi">4</span><span class="n">px</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span><span class="n">Animated</span> <span class="n">Buttons</span> <span class="o">-</span> <span class="s2">"Pressed Effect"</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">button</span> <span class="n">class</span><span class="o">=</span><span class="s2">"button"</span><span class="o">&gt;</span><span class="n">Click</span> <span class="n">Me</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Pop-up-Modal-Box-(for-when-button-is-clicked)">
+<a class="anchor" href="#Pop-up-Modal-Box-(for-when-button-is-clicked)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pop-up Modal Box (for when button is clicked)<a class="anchor-link" href="#Pop-up-Modal-Box-(for-when-button-is-clicked)"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&lt;!</span>-- from w3schools --&gt;
+
+<span class="o">&lt;!</span>DOCTYPE html&gt;
+<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">meta</span> <span class="n">name</span><span class="o">=</span><span class="s2">"viewport"</span> <span class="n">content</span><span class="o">=</span><span class="s2">"width=device-width, initial-scale=1"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="n">body</span> <span class="p">{</span><span class="n">font</span><span class="o">-</span><span class="n">family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">sans</span><span class="o">-</span><span class="n">serif</span><span class="p">;}</span>
+
+<span class="o">/*</span> <span class="n">The</span> <span class="n">Modal</span> <span class="p">(</span><span class="n">background</span><span class="p">)</span> <span class="o">*/</span>
+<span class="o">.</span><span class="n">modal</span> <span class="p">{</span>
+  <span class="n">display</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span> <span class="o">/*</span> <span class="n">Hidden</span> <span class="n">by</span> <span class="n">default</span> <span class="o">*/</span>
+  <span class="n">position</span><span class="p">:</span> <span class="n">fixed</span><span class="p">;</span> <span class="o">/*</span> <span class="n">Stay</span> <span class="ow">in</span> <span class="n">place</span> <span class="o">*/</span>
+  <span class="n">z</span><span class="o">-</span><span class="n">index</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span> <span class="o">/*</span> <span class="n">Sit</span> <span class="n">on</span> <span class="n">top</span> <span class="o">*/</span>
+  <span class="n">padding</span><span class="o">-</span><span class="n">top</span><span class="p">:</span> <span class="mi">100</span><span class="n">px</span><span class="p">;</span> <span class="o">/*</span> <span class="n">Location</span> <span class="n">of</span> <span class="n">the</span> <span class="n">box</span> <span class="o">*/</span>
+  <span class="n">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">width</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span> <span class="o">/*</span> <span class="n">Full</span> <span class="n">width</span> <span class="o">*/</span>
+  <span class="n">height</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span> <span class="o">/*</span> <span class="n">Full</span> <span class="n">height</span> <span class="o">*/</span>
+  <span class="n">overflow</span><span class="p">:</span> <span class="n">auto</span><span class="p">;</span> <span class="o">/*</span> <span class="n">Enable</span> <span class="n">scroll</span> <span class="k">if</span> <span class="n">needed</span> <span class="o">*/</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">rgb</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span> <span class="o">/*</span> <span class="n">Fallback</span> <span class="n">color</span> <span class="o">*/</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.4</span><span class="p">);</span> <span class="o">/*</span> <span class="n">Black</span> <span class="n">w</span><span class="o">/</span> <span class="n">opacity</span> <span class="o">*/</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">Modal</span> <span class="n">Content</span> <span class="o">*/</span>
+<span class="o">.</span><span class="n">modal</span><span class="o">-</span><span class="n">content</span> <span class="p">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#fefefe;</span>
+  <span class="n">margin</span><span class="p">:</span> <span class="n">auto</span><span class="p">;</span>
+  <span class="n">padding</span><span class="p">:</span> <span class="mi">20</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">border</span><span class="p">:</span> <span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="c1">#888;</span>
+  <span class="n">width</span><span class="p">:</span> <span class="mi">80</span><span class="o">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">The</span> <span class="n">Close</span> <span class="n">Button</span> <span class="o">*/</span>
+<span class="o">.</span><span class="n">close</span> <span class="p">{</span>
+  <span class="n">color</span><span class="p">:</span> <span class="c1">#aaaaaa;</span>
+  <span class="nb">float</span><span class="p">:</span> <span class="n">right</span><span class="p">;</span>
+  <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">28</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">font</span><span class="o">-</span><span class="n">weight</span><span class="p">:</span> <span class="n">bold</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">.</span><span class="n">close</span><span class="p">:</span><span class="n">hover</span><span class="p">,</span>
+<span class="o">.</span><span class="n">close</span><span class="p">:</span><span class="n">focus</span> <span class="p">{</span>
+  <span class="n">color</span><span class="p">:</span> <span class="c1">#000;</span>
+  <span class="n">text</span><span class="o">-</span><span class="n">decoration</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+  <span class="n">cursor</span><span class="p">:</span> <span class="n">pointer</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span><span class="n">Modal</span> <span class="n">Example</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span>
+
+<span class="o">&lt;!</span>-- Trigger/Open The Modal --&gt;
+<span class="o">&lt;</span><span class="n">button</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"myBtn"</span><span class="o">&gt;</span><span class="n">Open</span> <span class="n">Modal</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+
+<span class="o">&lt;!</span>-- The Modal --&gt;
+<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"myModal"</span> <span class="n">class</span><span class="o">=</span><span class="s2">"modal"</span><span class="o">&gt;</span>
+
+  <span class="o">&lt;!</span>-- Modal content --&gt;
+  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"modal-content"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="o">=</span><span class="s2">"close"</span><span class="o">&gt;&amp;</span><span class="n">times</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">Some</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">Modal</span><span class="o">..&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">//</span> <span class="n">Get</span> <span class="n">the</span> <span class="n">modal</span>
+<span class="n">var</span> <span class="n">modal</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"myModal"</span><span class="p">);</span>
+
+<span class="o">//</span> <span class="n">Get</span> <span class="n">the</span> <span class="n">button</span> <span class="n">that</span> <span class="n">opens</span> <span class="n">the</span> <span class="n">modal</span>
+<span class="n">var</span> <span class="n">btn</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"myBtn"</span><span class="p">);</span>
+
+<span class="o">//</span> <span class="n">Get</span> <span class="n">the</span> <span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span> <span class="n">element</span> <span class="n">that</span> <span class="n">closes</span> <span class="n">the</span> <span class="n">modal</span>
+<span class="n">var</span> <span class="n">span</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementsByClassName</span><span class="p">(</span><span class="s2">"close"</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+
+<span class="o">//</span> <span class="n">When</span> <span class="n">the</span> <span class="n">user</span> <span class="n">clicks</span> <span class="n">the</span> <span class="n">button</span><span class="p">,</span> <span class="nb">open</span> <span class="n">the</span> <span class="n">modal</span> 
+<span class="n">btn</span><span class="o">.</span><span class="n">onclick</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">modal</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">display</span> <span class="o">=</span> <span class="s2">"block"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="n">When</span> <span class="n">the</span> <span class="n">user</span> <span class="n">clicks</span> <span class="n">on</span> <span class="o">&lt;</span><span class="n">span</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">close</span> <span class="n">the</span> <span class="n">modal</span>
+<span class="n">span</span><span class="o">.</span><span class="n">onclick</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">modal</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="n">When</span> <span class="n">the</span> <span class="n">user</span> <span class="n">clicks</span> <span class="n">anywhere</span> <span class="n">outside</span> <span class="n">of</span> <span class="n">the</span> <span class="n">modal</span><span class="p">,</span> <span class="n">close</span> <span class="n">it</span>
+<span class="n">window</span><span class="o">.</span><span class="n">onclick</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">event</span><span class="o">.</span><span class="n">target</span> <span class="o">==</span> <span class="n">modal</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">modal</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="A-To-Do-list-for-the-Merchandise-User">
+<a class="anchor" href="#A-To-Do-list-for-the-Merchandise-User" aria-hidden="true"><span class="octicon octicon-link"></span></a>A To-Do list for the Merchandise User<a class="anchor-link" href="#A-To-Do-list-for-the-Merchandise-User"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&lt;!</span>-- From w3schools --&gt;
+<span class="o">&lt;!</span>DOCTYPE html&gt;
+<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">meta</span> <span class="n">name</span><span class="o">=</span><span class="s2">"viewport"</span> <span class="n">content</span><span class="o">=</span><span class="s2">"width=device-width, initial-scale=1"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="n">body</span> <span class="p">{</span>
+  <span class="n">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="nb">min</span><span class="o">-</span><span class="n">width</span><span class="p">:</span> <span class="mi">250</span><span class="n">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">Include</span> <span class="n">the</span> <span class="n">padding</span> <span class="ow">and</span> <span class="n">border</span> <span class="ow">in</span> <span class="n">an</span> <span class="n">element</span><span class="s1">'s total width and height */</span>
+<span class="o">*</span> <span class="p">{</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="p">:</span> <span class="n">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">Remove</span> <span class="n">margins</span> <span class="ow">and</span> <span class="n">padding</span> <span class="kn">from</span> <span class="nn">the</span> <span class="nb">list</span> <span class="o">*/</span>
+<span class="n">ul</span> <span class="p">{</span>
+  <span class="n">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">Style</span> <span class="n">the</span> <span class="nb">list</span> <span class="n">items</span> <span class="o">*/</span>
+<span class="n">ul</span> <span class="n">li</span> <span class="p">{</span>
+  <span class="n">cursor</span><span class="p">:</span> <span class="n">pointer</span><span class="p">;</span>
+  <span class="n">position</span><span class="p">:</span> <span class="n">relative</span><span class="p">;</span>
+  <span class="n">padding</span><span class="p">:</span> <span class="mi">12</span><span class="n">px</span> <span class="mi">8</span><span class="n">px</span> <span class="mi">12</span><span class="n">px</span> <span class="mi">40</span><span class="n">px</span><span class="p">;</span>
+  <span class="nb">list</span><span class="o">-</span><span class="n">style</span><span class="o">-</span><span class="nb">type</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+  <span class="n">background</span><span class="p">:</span> <span class="c1">#eee;</span>
+  <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">18</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">transition</span><span class="p">:</span> <span class="mf">0.2</span><span class="n">s</span><span class="p">;</span>
+  
+  <span class="o">/*</span> <span class="n">make</span> <span class="n">the</span> <span class="nb">list</span> <span class="n">items</span> <span class="n">unselectable</span> <span class="o">*/</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+  <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+  <span class="n">user</span><span class="o">-</span><span class="n">select</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">Set</span> <span class="nb">all</span> <span class="n">odd</span> <span class="nb">list</span> <span class="n">items</span> <span class="n">to</span> <span class="n">a</span> <span class="n">different</span> <span class="n">color</span> <span class="p">(</span><span class="n">zebra</span><span class="o">-</span><span class="n">stripes</span><span class="p">)</span> <span class="o">*/</span>
+<span class="n">ul</span> <span class="n">li</span><span class="p">:</span><span class="n">nth</span><span class="o">-</span><span class="n">child</span><span class="p">(</span><span class="n">odd</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">background</span><span class="p">:</span> <span class="c1">#f9f9f9;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">Darker</span> <span class="n">background</span><span class="o">-</span><span class="n">color</span> <span class="n">on</span> <span class="n">hover</span> <span class="o">*/</span>
+<span class="n">ul</span> <span class="n">li</span><span class="p">:</span><span class="n">hover</span> <span class="p">{</span>
+  <span class="n">background</span><span class="p">:</span> <span class="c1">#ddd;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">When</span> <span class="n">clicked</span> <span class="n">on</span><span class="p">,</span> <span class="n">add</span> <span class="n">a</span> <span class="n">background</span> <span class="n">color</span> <span class="ow">and</span> <span class="n">strike</span> <span class="n">out</span> <span class="n">text</span> <span class="o">*/</span>
+<span class="n">ul</span> <span class="n">li</span><span class="o">.</span><span class="n">checked</span> <span class="p">{</span>
+  <span class="n">background</span><span class="p">:</span> <span class="c1">#888;</span>
+  <span class="n">color</span><span class="p">:</span> <span class="c1">#fff;</span>
+  <span class="n">text</span><span class="o">-</span><span class="n">decoration</span><span class="p">:</span> <span class="n">line</span><span class="o">-</span><span class="n">through</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">Add</span> <span class="n">a</span> <span class="s2">"checked"</span> <span class="n">mark</span> <span class="n">when</span> <span class="n">clicked</span> <span class="n">on</span> <span class="o">*/</span>
+<span class="n">ul</span> <span class="n">li</span><span class="o">.</span><span class="n">checked</span><span class="p">::</span><span class="n">before</span> <span class="p">{</span>
+  <span class="n">content</span><span class="p">:</span> <span class="s1">''</span><span class="p">;</span>
+  <span class="n">position</span><span class="p">:</span> <span class="n">absolute</span><span class="p">;</span>
+  <span class="n">border</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#fff;</span>
+  <span class="n">border</span><span class="o">-</span><span class="n">style</span><span class="p">:</span> <span class="n">solid</span><span class="p">;</span>
+  <span class="n">border</span><span class="o">-</span><span class="n">width</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">2</span><span class="n">px</span> <span class="mi">2</span><span class="n">px</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">top</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">left</span><span class="p">:</span> <span class="mi">16</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="mi">45</span><span class="n">deg</span><span class="p">);</span>
+  <span class="n">height</span><span class="p">:</span> <span class="mi">15</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">width</span><span class="p">:</span> <span class="mi">7</span><span class="n">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">Style</span> <span class="n">the</span> <span class="n">close</span> <span class="n">button</span> <span class="o">*/</span>
+<span class="o">.</span><span class="n">close</span> <span class="p">{</span>
+  <span class="n">position</span><span class="p">:</span> <span class="n">absolute</span><span class="p">;</span>
+  <span class="n">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">padding</span><span class="p">:</span> <span class="mi">12</span><span class="n">px</span> <span class="mi">16</span><span class="n">px</span> <span class="mi">12</span><span class="n">px</span> <span class="mi">16</span><span class="n">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">.</span><span class="n">close</span><span class="p">:</span><span class="n">hover</span> <span class="p">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#f44336;</span>
+  <span class="n">color</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">Style</span> <span class="n">the</span> <span class="n">header</span> <span class="o">*/</span>
+<span class="o">.</span><span class="n">header</span> <span class="p">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#f44336;</span>
+  <span class="n">padding</span><span class="p">:</span> <span class="mi">30</span><span class="n">px</span> <span class="mi">40</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">color</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
+  <span class="n">text</span><span class="o">-</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">Clear</span> <span class="n">floats</span> <span class="n">after</span> <span class="n">the</span> <span class="n">header</span> <span class="o">*/</span>
+<span class="o">.</span><span class="n">header</span><span class="p">:</span><span class="n">after</span> <span class="p">{</span>
+  <span class="n">content</span><span class="p">:</span> <span class="s2">""</span><span class="p">;</span>
+  <span class="n">display</span><span class="p">:</span> <span class="n">table</span><span class="p">;</span>
+  <span class="n">clear</span><span class="p">:</span> <span class="n">both</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">Style</span> <span class="n">the</span> <span class="nb">input</span> <span class="o">*/</span>
+<span class="nb">input</span> <span class="p">{</span>
+  <span class="n">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">border</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+  <span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">width</span><span class="p">:</span> <span class="mi">75</span><span class="o">%</span><span class="p">;</span>
+  <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+  <span class="nb">float</span><span class="p">:</span> <span class="n">left</span><span class="p">;</span>
+  <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">16</span><span class="n">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span> <span class="n">Style</span> <span class="n">the</span> <span class="s2">"Add"</span> <span class="n">button</span> <span class="o">*/</span>
+<span class="o">.</span><span class="n">addBtn</span> <span class="p">{</span>
+  <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">width</span><span class="p">:</span> <span class="mi">25</span><span class="o">%</span><span class="p">;</span>
+  <span class="n">background</span><span class="p">:</span> <span class="c1">#d9d9d9;</span>
+  <span class="n">color</span><span class="p">:</span> <span class="c1">#555;</span>
+  <span class="nb">float</span><span class="p">:</span> <span class="n">left</span><span class="p">;</span>
+  <span class="n">text</span><span class="o">-</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+  <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">16</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">cursor</span><span class="p">:</span> <span class="n">pointer</span><span class="p">;</span>
+  <span class="n">transition</span><span class="p">:</span> <span class="mf">0.3</span><span class="n">s</span><span class="p">;</span>
+  <span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">.</span><span class="n">addBtn</span><span class="p">:</span><span class="n">hover</span> <span class="p">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#bbb;</span>
+<span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"myDIV"</span> <span class="n">class</span><span class="o">=</span><span class="s2">"header"</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">h2</span> <span class="n">style</span><span class="o">=</span><span class="s2">"margin:5px"</span><span class="o">&gt;</span><span class="n">My</span> <span class="n">To</span> <span class="n">Do</span> <span class="n">List</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"myInput"</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">"Title..."</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">span</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"newElement()"</span> <span class="n">class</span><span class="o">=</span><span class="s2">"addBtn"</span><span class="o">&gt;</span><span class="n">Add</span><span class="o">&lt;/</span><span class="n">span</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">ul</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"myUL"</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Hit</span> <span class="n">the</span> <span class="n">gym</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">li</span> <span class="n">class</span><span class="o">=</span><span class="s2">"checked"</span><span class="o">&gt;</span><span class="n">Pay</span> <span class="n">bills</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Meet</span> <span class="n">George</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Buy</span> <span class="n">eggs</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Read</span> <span class="n">a</span> <span class="n">book</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="n">Organize</span> <span class="n">office</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">//</span> <span class="n">Create</span> <span class="n">a</span> <span class="s2">"close"</span> <span class="n">button</span> <span class="ow">and</span> <span class="n">append</span> <span class="n">it</span> <span class="n">to</span> <span class="n">each</span> <span class="nb">list</span> <span class="n">item</span>
+<span class="n">var</span> <span class="n">myNodelist</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementsByTagName</span><span class="p">(</span><span class="s2">"LI"</span><span class="p">);</span>
+<span class="n">var</span> <span class="n">i</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">myNodelist</span><span class="o">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">var</span> <span class="n">span</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">"SPAN"</span><span class="p">);</span>
+  <span class="n">var</span> <span class="n">txt</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createTextNode</span><span class="p">(</span><span class="s2">"</span><span class="se">\u00D7</span><span class="s2">"</span><span class="p">);</span>
+  <span class="n">span</span><span class="o">.</span><span class="n">className</span> <span class="o">=</span> <span class="s2">"close"</span><span class="p">;</span>
+  <span class="n">span</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">txt</span><span class="p">);</span>
+  <span class="n">myNodelist</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">span</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="n">Click</span> <span class="n">on</span> <span class="n">a</span> <span class="n">close</span> <span class="n">button</span> <span class="n">to</span> <span class="n">hide</span> <span class="n">the</span> <span class="n">current</span> <span class="nb">list</span> <span class="n">item</span>
+<span class="n">var</span> <span class="n">close</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementsByClassName</span><span class="p">(</span><span class="s2">"close"</span><span class="p">);</span>
+<span class="n">var</span> <span class="n">i</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">close</span><span class="o">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">close</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">onclick</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">var</span> <span class="n">div</span> <span class="o">=</span> <span class="n">this</span><span class="o">.</span><span class="n">parentElement</span><span class="p">;</span>
+    <span class="n">div</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="n">Add</span> <span class="n">a</span> <span class="s2">"checked"</span> <span class="n">symbol</span> <span class="n">when</span> <span class="n">clicking</span> <span class="n">on</span> <span class="n">a</span> <span class="nb">list</span> <span class="n">item</span>
+<span class="n">var</span> <span class="nb">list</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">querySelector</span><span class="p">(</span><span class="s1">'ul'</span><span class="p">);</span>
+<span class="nb">list</span><span class="o">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span><span class="n">ev</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">ev</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">tagName</span> <span class="o">===</span> <span class="s1">'LI'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">ev</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">classList</span><span class="o">.</span><span class="n">toggle</span><span class="p">(</span><span class="s1">'checked'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">},</span> <span class="n">false</span><span class="p">);</span>
+
+<span class="o">//</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">new</span> <span class="nb">list</span> <span class="n">item</span> <span class="n">when</span> <span class="n">clicking</span> <span class="n">on</span> <span class="n">the</span> <span class="s2">"Add"</span> <span class="n">button</span>
+<span class="n">function</span> <span class="n">newElement</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">var</span> <span class="n">li</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">"li"</span><span class="p">);</span>
+  <span class="n">var</span> <span class="n">inputValue</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"myInput"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+  <span class="n">var</span> <span class="n">t</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createTextNode</span><span class="p">(</span><span class="n">inputValue</span><span class="p">);</span>
+  <span class="n">li</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">inputValue</span> <span class="o">===</span> <span class="s1">''</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">alert</span><span class="p">(</span><span class="s2">"You must write something!"</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"myUL"</span><span class="p">)</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">li</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">"myInput"</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+
+  <span class="n">var</span> <span class="n">span</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">"SPAN"</span><span class="p">);</span>
+  <span class="n">var</span> <span class="n">txt</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createTextNode</span><span class="p">(</span><span class="s2">"</span><span class="se">\u00D7</span><span class="s2">"</span><span class="p">);</span>
+  <span class="n">span</span><span class="o">.</span><span class="n">className</span> <span class="o">=</span> <span class="s2">"close"</span><span class="p">;</span>
+  <span class="n">span</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">txt</span><span class="p">);</span>
+  <span class="n">li</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">span</span><span class="p">);</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">close</span><span class="o">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">close</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">onclick</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="n">var</span> <span class="n">div</span> <span class="o">=</span> <span class="n">this</span><span class="o">.</span><span class="n">parentElement</span><span class="p">;</span>
+      <span class="n">div</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Parallax-Scrolling-(fixed-back-image)--maybe-for-Homepage/-background-of-different-pages-(add-button-on-image??)">
+<a class="anchor" href="#Parallax-Scrolling-(fixed-back-image)--maybe-for-Homepage/-background-of-different-pages-(add-button-on-image??)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Parallax Scrolling (fixed back image)- maybe for Homepage/ background of different pages (add button on image??)<a class="anchor-link" href="#Parallax-Scrolling-(fixed-back-image)--maybe-for-Homepage/-background-of-different-pages-(add-button-on-image??)"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&lt;!</span>-- from w3schools--&gt;
+
+<span class="o">&lt;!</span>DOCTYPE html&gt;
+<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">meta</span> <span class="n">name</span><span class="o">=</span><span class="s2">"viewport"</span> <span class="n">content</span><span class="o">=</span><span class="s2">"width=device-width, initial-scale=1"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="o">.</span><span class="n">parallax</span> <span class="p">{</span>
+  <span class="o">/*</span> <span class="n">The</span> <span class="n">image</span> <span class="n">used</span> <span class="o">*/</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">image</span><span class="p">:</span> <span class="n">url</span><span class="p">(</span><span class="s2">"img_parallax.jpg"</span><span class="p">);</span>
+
+  <span class="o">/*</span> <span class="n">Set</span> <span class="n">a</span> <span class="n">specific</span> <span class="n">height</span> <span class="o">*/</span>
+  <span class="nb">min</span><span class="o">-</span><span class="n">height</span><span class="p">:</span> <span class="mi">500</span><span class="n">px</span><span class="p">;</span> 
+
+  <span class="o">/*</span> <span class="n">Create</span> <span class="n">the</span> <span class="n">parallax</span> <span class="n">scrolling</span> <span class="n">effect</span> <span class="o">*/</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">attachment</span><span class="p">:</span> <span class="n">fixed</span><span class="p">;</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">position</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">repeat</span><span class="p">:</span> <span class="n">no</span><span class="o">-</span><span class="n">repeat</span><span class="p">;</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="n">cover</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">Scroll</span> <span class="n">Up</span> <span class="ow">and</span> <span class="n">Down</span> <span class="n">this</span> <span class="n">page</span> <span class="n">to</span> <span class="n">see</span> <span class="n">the</span> <span class="n">parallax</span> <span class="n">scrolling</span> <span class="n">effect</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"parallax"</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s2">"height:1000px;background-color:red;font-size:36px"</span><span class="o">&gt;</span>
+<span class="n">Scroll</span> <span class="n">Up</span> <span class="ow">and</span> <span class="n">Down</span> <span class="n">this</span> <span class="n">page</span> <span class="n">to</span> <span class="n">see</span> <span class="n">the</span> <span class="n">parallax</span> <span class="n">scrolling</span> <span class="n">effect</span><span class="o">.</span>
+<span class="n">This</span> <span class="n">div</span> <span class="ow">is</span> <span class="n">just</span> <span class="n">here</span> <span class="n">to</span> <span class="n">enable</span> <span class="n">scrolling</span><span class="o">.</span>
+<span class="n">Tip</span><span class="p">:</span> <span class="n">Try</span> <span class="n">to</span> <span class="n">remove</span> <span class="n">the</span> <span class="n">background</span><span class="o">-</span><span class="n">attachment</span> <span class="nb">property</span> <span class="n">to</span> <span class="n">remove</span> <span class="n">the</span> <span class="n">scrolling</span> <span class="n">effect</span><span class="o">.</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Pill-Button">
+<a class="anchor" href="#Pill-Button" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pill Button<a class="anchor-link" href="#Pill-Button"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&lt;!</span>-- use this button <span class="k">for</span> a more rounded button instead of sharp edges--&gt;
+<span class="o">&lt;</span><span class="n">button</span> <span class="n">class</span><span class="o">=</span><span class="s2">"button"</span><span class="o">&gt;</span><span class="n">Pill</span> <span class="n">Button</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="avac54765, alexac54765, bushku, antonyrc6/groupfastpage"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/groupfastpage/projectcode/notebook" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/groupfastpage/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/groupfastpage/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/groupfastpage/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A fastpage for Shruthi, Ava, Alexa, and Antony&#39;s groupwork. :)</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
