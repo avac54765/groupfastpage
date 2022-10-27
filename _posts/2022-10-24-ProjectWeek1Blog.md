@@ -28,6 +28,7 @@ categories: [week 9]
  # Project Progress
 ## What's new?
 
+- reasearch new ideas and code from w3schools and put in blog
 - a new page on our fastpage for our project
 - a first attempt at creating a button for an email draft to pop up on user's screen
 
