@@ -7,7 +7,6 @@ type: pbl
 
 <!-- from w3schools-->
 
-<!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -81,7 +80,6 @@ type: pbl
     }
     }
 </script>
-</html>
 </div>
 
 <div class="parallax"></div>
