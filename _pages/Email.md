@@ -37,7 +37,7 @@ type: pbl
 </head>
 <body>
 
-<button class="button"><center>Email Draft</center></button>
+<button class="button" style="margin-left: auto; margin-right: auto;" onclick="alert('You pressed the button')">Email Draft</button>
 
 </body>
 </html>
