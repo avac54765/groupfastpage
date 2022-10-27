@@ -63,4 +63,6 @@ Problem-based-learning program: Idea is around ASB Merchandise Commissioner Mana
    - make submenu with links to pages
 2. make API= list of merchandise items (keeping track of stock)
    - list of dictionaries of ID#, description, quantity)
-3. make API= 
+
+# Project Progress
+

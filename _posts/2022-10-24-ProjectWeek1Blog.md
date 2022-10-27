@@ -22,7 +22,35 @@ categories: [week 9]
 - syntax errors to think about: 
  - merch commisioner will want to be able to input their actual quantity of items (not randomized)
  - what happens if their quanitity goes below 0? (-1 function)
+ - Why is the quantity sometimes negative (does our range not work?)?
 
 
- ## Other's Videos
- - 
+ # Project Progress
+## What's new?
+
+- a new page on our fastpage for our project
+- a first attempt at creating a button for an email draft to pop up on user's screen
+
+## The Plan
+
+- Have a page on our team fastpage that acts as our merchandise website 
+- Use parallax scrolling to have a background image of the Del Norte logo
+- have text inbetween images each box saying:
+    - a button for an email prompt 
+    - text linking to stock API
+    - an html table that shows customer info 
+
+## Next Steps
+
+- fix API frontend (quantity can't reach below zero, quantity subtratction working, ID defined)
+- fix project page (email button, images, adding the other text)
+
+![]({{site.baseurl}}/images/emailbutton.png)
+
+    - start over with something more simple
+        - html button first
+        - add javascript
+        - add popup modal (that contains email text)
+        - once these work add background image with parallax scrolling
+        - create HTML table with customer info
+        - Once this works try and add user input into API and customer info table
