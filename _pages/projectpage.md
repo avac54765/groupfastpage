@@ -33,7 +33,6 @@ type: pbl
 
     <div style="height:200px;background-color:#696969;font-size:20px">
 
-     <p>
 <!--Trigger/Open The Modal -->
         <button id="myBtn">Draft Email to Customer</button>
 
@@ -49,7 +48,7 @@ type: pbl
                 __Merch Andise__(commissioner name)
                 Del Norte ASB
                 Merchandise Commmissioner</p>
-        </p>
+    
     </div>
 
   </div>
