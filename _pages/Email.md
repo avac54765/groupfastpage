@@ -11,7 +11,6 @@ type: pbl
 <!-- Starting Over code without Parallax-->
 <!-- info from w3schools-->
 
-<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,16 +22,14 @@ type: pbl
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #04AA6D;
+  background-color: ##FFFAF0;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
-
-.button:hover {background-color: #3e8e41}
-
+.button:hover {background-color: #DCDCDC}
 .button:active {
-  background-color: #3e8e41;
+  background-color: #DCDCDC;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -40,9 +37,7 @@ type: pbl
 </head>
 <body>
 
-<h2>Animated Buttons - "Pressed Effect"</h2>
-
-<button class="button">Click Me</button>
+<button class="button">Email Draft</button>
 
 </body>
 </html>
