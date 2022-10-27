@@ -25,7 +25,7 @@ categories: [week 9]
  - Why is the quantity sometimes negative (does our range not work?)?
 
 
- # Project Progress
+# Project Progress
 ## What's new?
 
 - reasearch new ideas and code from w3schools and put in blog
