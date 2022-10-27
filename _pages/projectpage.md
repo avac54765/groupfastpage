@@ -29,31 +29,31 @@ type: pbl
     </head>
 <body>
 
-<div class="parallax"></div>
+  <div class="parallax"></div>
 
-<div style="height:500px;background-color:#696969;font-size:20px">
+    <div style="height:200px;background-color:#696969;font-size:20px">
 
 
- <!--Trigger/Open The Modal -->
-    <button id="myBtn">Draft Email to Customer</button>
+<!--Trigger/Open The Modal -->
+        <button id="myBtn">Draft Email to Customer</button>
 
 <!-- The Modal -->
-    <div id="myModal" class="modal">
+        <div id="myModal" class="modal">
 
 <!-- Modal content -->
-    <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Hello __(customer name here)__!
-                Thank you so much for your order! Please come to the student store at lunch to pick up your new swaggy merchandise!
-            Sincerely,
-            __Merch Andise__(commissioner name)
-            Del Norte ASB
-            Merchandise Commmissioner</p>
-        </div>
+        <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Hello __(customer name here)__!
+                    Thank you so much for your order! Please come to the student store at lunch to pick up your new swaggy merchandise!
+                Sincerely,
+                __Merch Andise__(commissioner name)
+                Del Norte ASB
+                Merchandise Commmissioner</p>
+    </div>
 
-</div>
+  </div>
 
-<script>
+    <script>
         // Get the modal
             var modal = document.getElementById("myModal");
 
@@ -79,7 +79,7 @@ type: pbl
             modal.style.display = "none";
         }
         }
-</script>
+    </script>
 </div>
 
 <div class="parallax"></div>
