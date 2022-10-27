@@ -34,7 +34,7 @@ type: pbl
     <div style="height:200px;background-color:#696969;font-size:20px">
 
 <!--Trigger/Open The Modal -->
-        <button id="myBtn">Draft Email to Customer</button>
+        <button id="myBtn"><center>Draft Email to Customer</center></button>
 
 <!-- The Modal -->
         <div id="myModal" class="modal">
