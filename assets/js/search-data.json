@@ -163,7 +163,7 @@
   
       ,"page4": {
           "title": "Merchandise User Project",
-          "content": ". Draft Email to Customer &times; Hello __(customer name here)__! Thank you so much for your order! Please come to the student store at lunch to pick up your new swaggy merchandise! Sincerely, __Merch Andise__(commissioner name) Del Norte ASB Merchandise Commmissioner . .",
+          "content": ". Draft Email to Customer &times; Hello __(customer name here)__! Thank you so much for your order! Please come to the student store at lunch to pick up your new swaggy merchandise! Sincerely, __Merch Andise__(commissioner name) Del Norte ASB Merchandise Commmissioner . &lt;/p&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt; .",
           "url": "https://coolcoders.github.io/groupfastpage/merch/project",
           "relUrl": "/merch/project",
           "date": ""
