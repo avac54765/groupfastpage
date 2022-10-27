@@ -28,7 +28,7 @@ type: pbl
     }
 </style>
 </head>
-    <body>
+<body>
 
 <div class="parallax"></div>
 
