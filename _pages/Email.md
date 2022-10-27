@@ -33,13 +33,27 @@ type: pbl
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+.modal {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>
 </head>
 <body>
 
-<button class="button" style="margin-left: auto; margin-right: auto;" onclick="alert('You pressed the button')">Email Draft</button>
+<button class="button" style="margin-left: auto; margin-right: auto;">Email Draft</button>
+    <div class="modal">
+      <div class="modal_contents">
+        <p>Email content here</p>
+      </div> 
+    </div>
+</body>   
 
-</body>
 </html>
 
 
