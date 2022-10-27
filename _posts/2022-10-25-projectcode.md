@@ -631,6 +631,43 @@ layout: notebook
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="First-Name/-Last-Name-input-for-adding-customer-info">First Name/ Last Name input for adding customer info<a class="anchor-link" href="#First-Name/-Last-Name-input-for-adding-customer-info"> </a></h1>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">h2</span><span class="o">&gt;</span><span class="n">Text</span> <span class="n">field</span><span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">The</span> <span class="o">&lt;</span><span class="n">strong</span><span class="o">&gt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="o">&lt;/</span><span class="n">strong</span><span class="o">&gt;</span> <span class="n">defines</span> <span class="n">a</span> <span class="n">one</span><span class="o">-</span><span class="n">line</span> <span class="n">text</span> <span class="nb">input</span> <span class="n">field</span><span class="p">:</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">form</span> <span class="n">action</span><span class="o">=</span><span class="s2">&quot;/action_page.php&quot;</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">&quot;fname&quot;</span><span class="o">&gt;</span><span class="n">First</span> <span class="n">name</span><span class="p">:</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;fname&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;fname&quot;</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">&quot;lname&quot;</span><span class="o">&gt;</span><span class="n">Last</span> <span class="n">name</span><span class="p">:</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;lname&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;lname&quot;</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;submit&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;Submit&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">form</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">Note</span> <span class="n">that</span> <span class="n">the</span> <span class="n">form</span> <span class="n">itself</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">visible</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="n">Also</span> <span class="n">note</span> <span class="n">that</span> <span class="n">the</span> <span class="n">default</span> <span class="n">width</span> <span class="n">of</span> <span class="n">a</span> <span class="n">text</span> <span class="n">field</span> <span class="ow">is</span> <span class="mi">20</span> <span class="n">characters</span><span class="o">.&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
