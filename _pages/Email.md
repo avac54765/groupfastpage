@@ -37,7 +37,7 @@ type: pbl
 </head>
 <body>
 
-<button class="button">Email Draft</button>
+<button class="button"><center>Email Draft</center></button>
 
 </body>
 </html>
