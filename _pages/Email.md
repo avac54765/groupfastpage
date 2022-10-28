@@ -46,7 +46,7 @@ type: pbl
 </head>
 <body>
 
-<button class="button" style="margin-left: auto; margin-right: auto;">Email Draft</button>
+<button class="button" style="margin-left: auto; margin-right: auto;" onclick="alert('Email content here')">Email Draft</button>
     <div class="modal">
       <div class="modal_contents">
         <p>Email content here</p>
