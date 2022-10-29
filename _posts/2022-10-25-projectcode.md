@@ -1,6 +1,6 @@
 ---
 keywords: fastai
-description: ?Writing code on a notebook to develop and test code before implementing on project.
+description: Writing code on a notebook to develop and test code before implementing on project.
 title: Writing/Testing Frontend Code for Project
 toc: true
 comments: true

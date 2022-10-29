@@ -1,12 +1,13 @@
 ---
-description: new md for testing email button
-title: Testing code for email
+title: Email code test
 toc: true
 comments: true
-permalink: /email/notebook
+layout: post
+description: new md for testing the email button
+permalink: /email/project
 categories: [week 10]
-layout: notebook
 ---
+
 
 <!-- trying new format from Getbootstrap website- has a modal with button>
 <!-- Button trigger modal -->
