@@ -7,7 +7,7 @@ type: pbl
 <!-- trying new format from Getbootstrap website- has a modal with button>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
+  Customer Email Draft
 </button>
 
 <!-- Modal -->
@@ -15,17 +15,19 @@ type: pbl
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Customer Email Draft</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+                Hello __(customer name here)__!
+                    Thank you so much for your order! Please come to the student store at lunch to pick up your new swaggy merchandise!
+                Sincerely,
+                __Merch Andise__(commissioner name)
+                Del Norte ASB
+                Merchandise Commmissioner
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
