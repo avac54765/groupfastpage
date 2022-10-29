@@ -1,9 +1,13 @@
 ---
-layout: default
-title: Contact
-permalink: /testcode/project
-type: pbl
+description: new md for testing email button
+title: Testing code for email
+toc: true
+comments: true
+permalink: /email/notebook
+categories: [week 10]
+layout: notebook
 ---
+
 <!-- trying new format from Getbootstrap website- has a modal with button>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
