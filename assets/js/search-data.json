@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Email code test",
-            "content": "Customer Email Draft . Customer Email Draft . &times; Hello __(customer name here)__! Thank you so much for your order! Please come to the student store at lunch to pick up your new swaggy merchandise! Sincerely, __Merch Andise__(commissioner name) Del Norte ASB Merchandise Commmissioner &lt;/div&gt; .",
+            "content": "Customer Email Draft . Modal title . &times; Hello __(customer name here)__! Thank you so much for your order! Please come to the student store at lunch to pick up your new swaggy merchandise! Sincerely, __Merch Andise__(commissioner name) Del Norte ASB Merchandise Commmissioner Close",
             "url": "https://coolcoders.github.io/groupfastpage/email/project",
             "relUrl": "/email/project",
             "date": " • Oct 29, 2022"
