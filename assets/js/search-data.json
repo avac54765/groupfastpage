@@ -183,8 +183,6 @@
   
 
   
-
-  
   
 
   
@@ -204,7 +202,7 @@
   
 
   
-      ,"page13": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://coolcoders.github.io/groupfastpage/robots.txt",
