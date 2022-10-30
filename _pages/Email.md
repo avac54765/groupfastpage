@@ -5,7 +5,7 @@ permalink: /merch/project
 type: pbl
 ---
 
-<h1 style="background-color:F6E2F3; text-align:center" > Want to Contact your Customers?<h1>
+<h1 style="background-color:Gainsboro; text-align:center" > Want to Contact your Customers?<h1>
 
 
 
