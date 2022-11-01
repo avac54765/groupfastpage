@@ -196,7 +196,7 @@
   
       ,"page5": {
           "title": "Orders",
-          "content": "&lt;!DOCTYPE HTML&gt; . merch_orders= [ ] . Customer Name Items in Order Income . input here | . input here | . .",
+          "content": "Customer Orders . Customer Name Items in Order Income . name input here | order input here | income input here | &lt;/table&gt; &lt;/body&gt; &lt;/html&gt; .",
           "url": "https://coolcoders.github.io/groupfastpage/merchtable/project",
           "relUrl": "/merchtable/project",
           "date": ""
