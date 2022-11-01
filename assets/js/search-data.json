@@ -112,6 +112,17 @@
   
     
         ,"post10": {
+            "title": "Learning to work with Javascript.",
+            "content": "console.log(&quot;Mr. Mortensen is cool!&quot;); // console.log displays the parameter (hello word) in the console . Mr. Mortensen is cool! . var msg = &quot;Mr. Mortensen is cool&quot;; // This is defining the message as a variable to be used in the console.log funciton console.log(msg); . Mr. Mortensen is cool . function logIt(output) { // this is defining a function, named logIt console.log(output); } logIt(msg); . Mr. Mortensen is cool . console.log(&quot;Reuse of logIT&quot;) logIt(&quot;Hello, Students!&quot;); // calls a string logIt(2022) // calls a number . Reuse of logIT Hello, Students! 2022 . function logItType(output) { console.log(typeof output, &quot;;&quot;, output); //typeof= type of object } console.log(&quot;Looking at dynamic nature of types in JavaScript&quot;) logItType(&quot;hello&quot;); // String logItType(2020); // Number logItType([1, 2, 3]); // Object is generic for this Array, which similar to Python List . Looking at dynamic nature of types in JavaScript string ; hello number ; 2020 object ; [ 1, 2, 3 ] . // define a function to hold data for a Person function Person(name, ghID, classOf, haircolor, favfood) { this.name = name; this.ghID = ghID; this.classOf = classOf; this.haircolor= haircolor; this.favfood= favfood; this.role = &quot;&quot;; } // define a setter for role in Person data Person.prototype.setRole = function(role) { this.role = role; } // define a JSON conversion &quot;method&quot; associated with Person Person.prototype.toJSON = function() { const obj = {name: this.name, ghID: this.ghID, classOf: this.classOf, haircolor: this.haircolor, favfood: this.favfood, role: this.role}; const json = JSON.stringify(obj); return json; } // make a new Person and assign to variable teacher var teacher = new Person(&quot;Mr M&quot;, &quot;jm1021&quot;, 1977, &quot;blue&quot;, &quot;pasta&quot;); teacher.setRole(&quot;Teacher&quot;); // output of Object and JSON/string associated with Teacher logItType(teacher); // object type is easy to work with in JavaScript logItType(teacher.toJSON()); // json/string is useful when passing data on internet . object ; Person { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, haircolor: &#39;blue&#39;, favfood: &#39;pasta&#39;, role: &#39;Teacher&#39; } string ; {&#34;name&#34;:&#34;Mr M&#34;,&#34;ghID&#34;:&#34;jm1021&#34;,&#34;classOf&#34;:1977,&#34;haircolor&#34;:&#34;blue&#34;,&#34;favfood&#34;:&#34;pasta&#34;,&#34;role&#34;:&#34;Teacher&#34;} . // define a student Array of Person(s) var students = [ new Person(&quot;Anthony&quot;, &quot;tonyhieu&quot;, 2022, &quot;pink&quot;, &quot;pizza&quot;), new Person(&quot;Bria&quot;, &quot;B-G101&quot;, 2023, &quot;blonde&quot;, &quot;dirt&quot;), new Person(&quot;Allie&quot;, &quot;xiaoa0&quot;, 2023, &quot;ginger&quot;, &quot;apples&quot;), new Person(&quot;Tigran&quot;, &quot;Tigran7&quot;, 2023, &quot;black&quot;, &quot;chocolate&quot;), new Person(&quot;Rebecca&quot;, &quot;Rebecca-123&quot;, 2023, &quot;grey&quot;, &quot;sushi&quot;), new Person(&quot;Vidhi&quot;, &quot;unknown&quot;, 2024, &quot;green&quot;, &quot;urmom&quot;) ]; // define a classroom and build Classroom objects and json function Classroom(teacher, students){ // 1 teacher, many student // start Classroom with Teacher teacher.setRole(&quot;Teacher&quot;); this.teacher = teacher; this.classroom = [teacher]; // add each Student to Classroom this.students = students; this.students.forEach(student =&gt; { student.setRole(&quot;Student&quot;); this.classroom.push(student); }); // build json/string format of Classroom this.json = []; this.classroom.forEach(person =&gt; this.json.push(person.toJSON())); } // make a CompSci classroom from formerly defined teacher and students compsci = new Classroom(teacher, students); // output of Objects and JSON in CompSci classroom logItType(compsci.classroom); // constructed classroom object logItType(compsci.classroom[0].name); // abstract 1st objects name logItType(compsci.json[0]); // show json conversion of 1st object to string logItType(JSON.parse(compsci.json[0])); // show JSON.parse inverse of JSON.stringify . object ; [ Person { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, haircolor: &#39;blue&#39;, favfood: &#39;pasta&#39;, role: &#39;Teacher&#39; }, Person { name: &#39;Anthony&#39;, ghID: &#39;tonyhieu&#39;, classOf: 2022, haircolor: &#39;pink&#39;, favfood: &#39;pizza&#39;, role: &#39;Student&#39; }, Person { name: &#39;Bria&#39;, ghID: &#39;B-G101&#39;, classOf: 2023, haircolor: &#39;blonde&#39;, favfood: &#39;dirt&#39;, role: &#39;Student&#39; }, Person { name: &#39;Allie&#39;, ghID: &#39;xiaoa0&#39;, classOf: 2023, haircolor: &#39;ginger&#39;, favfood: &#39;apples&#39;, role: &#39;Student&#39; }, Person { name: &#39;Tigran&#39;, ghID: &#39;Tigran7&#39;, classOf: 2023, haircolor: &#39;black&#39;, favfood: &#39;chocolate&#39;, role: &#39;Student&#39; }, Person { name: &#39;Rebecca&#39;, ghID: &#39;Rebecca-123&#39;, classOf: 2023, haircolor: &#39;grey&#39;, favfood: &#39;sushi&#39;, role: &#39;Student&#39; }, Person { name: &#39;Vidhi&#39;, ghID: &#39;unknown&#39;, classOf: 2024, haircolor: &#39;green&#39;, favfood: &#39;urmom&#39;, role: &#39;Student&#39; } ] string ; Mr M string ; {&#34;name&#34;:&#34;Mr M&#34;,&#34;ghID&#34;:&#34;jm1021&#34;,&#34;classOf&#34;:1977,&#34;haircolor&#34;:&#34;blue&#34;,&#34;favfood&#34;:&#34;pasta&#34;,&#34;role&#34;:&#34;Teacher&#34;} object ; { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, haircolor: &#39;blue&#39;, favfood: &#39;pasta&#39;, role: &#39;Teacher&#39; } . IJavaScript and Table formatting using toHTML method . The 3-part JavaScript in the _toHTML method Style part is building CSS inline formatting | Body part is constructing the Table Rows (tr), Table Headings (th), and Table Data (td). The table data is obtained from a Classroom object. The JavaScript for loop allows the construction of a new row of data for each person object in the Array. | Return part creates the HTML fragment for rendering | . | . // define an HTML conversion &quot;method&quot; associated with Classroom Classroom.prototype._toHtml = function() { // HTML Style is build using inline structure var style = ( &quot;display:inline-block;&quot; + &quot;background:#7E006C;&quot; + &quot;border: 2px solid grey;&quot; + &quot;box-shadow: 0.8em 0.4em 0.4em grey;&quot; ); // HTML Body of Table is build as a series of concatenations (+=) var body = &quot;&quot;; // Heading for Array Columns body += &quot;&lt;tr&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Name&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;GitHub ID&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Class Of&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Hair Color&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Favorite Food&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Role&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;/tr&gt;&quot;; // Data of Array, iterate through each row of compsci.classroom for (var row of compsci.classroom) { // tr for each row, a new line body += &quot;&lt;tr&gt;&quot;; // td for each column of data body += &quot;&lt;td&gt;&quot; + row.name + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.ghID + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.classOf + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.haircolor + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.favfood + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.role + &quot;&lt;/td&gt;&quot;; // tr to end line body += &quot;&lt;tr&gt;&quot;; } // Build and HTML fragment of div, table, table body return ( &quot;&lt;div style=&#39;&quot; + style + &quot;&#39;&gt;&quot; + &quot;&lt;table&gt;&quot; + body + &quot;&lt;/table&gt;&quot; + &quot;&lt;/div&gt;&quot; ); }; // IJavaScript HTML processor receive parameter of defined HTML fragment $$.html(compsci._toHtml()); . NameGitHub IDClass OfHair ColorFavorite FoodRole . Mr M | jm1021 | 1977 | blue | pasta | Teacher | Anthony | tonyhieu | 2022 | pink | pizza | Student | Bria | B-G101 | 2023 | blonde | dirt | Student | Allie | xiaoa0 | 2023 | ginger | apples | Student | Tigran | Tigran7 | 2023 | black | chocolate | Student | Rebecca | Rebecca-123 | 2023 | grey | sushi | Student | Vidhi | unknown | 2024 | green | urmom | Student | &lt;/table&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; . . .",
+            "url": "https://coolcoders.github.io/groupfastpage/learningjavascript/javascript",
+            "relUrl": "/learningjavascript/javascript",
+            "date": " • Sep 26, 2022"
+        }
+        
+    
+  
+    
+        ,"post11": {
             "title": "Final Project Planning",
             "content": "The Idea . Our group wants to make a project that serves as a helpful tool for the ASB class to keep track of profits, quantities, and other things related to merchandise. . Steps for Completion . Make an outline of all the abilities this program will have | Decide what funtions/pieces we will need to accomplish this | Code, code, code! | continue to use scrum board and process! | Brain Write . Problem-based-learning program: Idea is around ASB Merchandise Commissioner Management. . A system where an asb user can keep track of merchandise. merchandise stock | design organization | merchandise orders | emails | . | Attributes: user input for orders and order descriptions (also customer name and email) | commissioner info (name, grade, position, etc.) commissioner password (one password for everyone) | . | created a pre-written email draft off of a button to a specific customer | Use loops, variables, and lists to keep track of merchandise stock (have a return message for when reaches zero) | use JSON to make a table of all merch and customer info | HTML nav bars and menus | new page for merch designs, have a section for new ideas, in progress, and finalized desings (either have input for images or text imput of links to design pages) | . | . Agile Development . Requirements: things listed above, constraints: making the system too complicated | impact: this project will help make the work of a merchandise commissioner easier and more organized | . User Experience . Home page (design fastpage homepage) | submenu on home page leading to same pages as nav bar | has navigation bar with : order data (customer name, quantity ordered, item ordered, income) | stock (keeps track of inventory) | email page (prepared draft ready to be edited and sent out) | . | Implementing . Use group fastpage to create website have nav bar with pages above | make submenu with links to pages | . | make API= list of merchandise items (keeping track of stock) list of dictionaries of ID#, description, quantity) | . |",
             "url": "https://coolcoders.github.io/groupfastpage/finalplanning/markdown",
@@ -122,7 +133,7 @@
     
   
     
-        ,"post11": {
+        ,"post12": {
             "title": "Scrum Process",
             "content": "My Group’s Scrum Process . . First, my group will meet and discuss the directions given to us. We will then assign the work to our roles. During the sprint, we will continue to meet daily to discuss our progress. We will also continue to use our scrum board on Github to track our progress and what we need to get done. | . Member Roles . Below are the roles of our members for sprints and teamwork oriented projects. . Name Role Job Description . Ava Carlson | Scrum Master | Helps to facilitate the sprint by ensuring that an agile framework is followed; Committed to tracking issues and maintaining scrum boards, but should also remain flexible and open to opportunities for the team to improve their workflow. | . Alexa Carlson | Frontend Developer | A front-end developer builds the front-end portion of websites and web applications—that is, the part that users actually see and interact with. | . Shruthi Damodar | DevOps | DevOps is the combination of cultural philosophies, practices, and tools that increases an team’s ability to deliver applications and services at high velocity: version control, integration, managing dependencies (requirements.txt), AWS deployment are some of the key functions that impact velocity. | . Antony Yu | Backend Developer | Back-end developers a build and maintain the mechanisms that process data and perform actions like data storage, security, and other server-side functions that you cannot see. | . Our Scrum Board .",
             "url": "https://coolcoders.github.io/groupfastpage/AgileMethodology/scrumprocess",
@@ -133,7 +144,7 @@
     
   
     
-        ,"post12": {
+        ,"post13": {
             "title": "Fetch of Backend Jokes",
             "content": "| Overview | Stock API | Jokes API | . Joke HaHa Boohoo .",
             "url": "https://coolcoders.github.io/groupfastpage/data/jokes",
@@ -183,6 +194,22 @@
   
 
   
+      ,"page5": {
+          "title": "Orders",
+          "content": "",
+          "url": "https://coolcoders.github.io/groupfastpage/merchtable/project",
+          "relUrl": "/merchtable/project",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -191,18 +218,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page12": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://coolcoders.github.io/groupfastpage/robots.txt",
