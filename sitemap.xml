@@ -63,9 +63,6 @@
 <loc>https://coolcoders.github.io/groupfastpage/merch/project</loc>
 </url>
 <url>
-<loc>https://coolcoders.github.io/groupfastpage/about/</loc>
-</url>
-<url>
 <loc>https://coolcoders.github.io/groupfastpage/</loc>
 </url>
 <url>
@@ -75,10 +72,11 @@
 <loc>https://coolcoders.github.io/groupfastpage/search/</loc>
 </url>
 <url>
-<loc>https://coolcoders.github.io/groupfastpage/categories/</loc>
+<loc>https://coolcoders.github.io/groupfastpage/_pages/contact.html</loc>
+<lastmod>2022-11-01T16:22:35-05:00</lastmod>
 </url>
 <url>
-<loc>https://coolcoders.github.io/groupfastpage/_pages/contact.html</loc>
-<lastmod>2022-11-01T16:03:49-05:00</lastmod>
+<loc>https://coolcoders.github.io/groupfastpage/_pages/tags.html</loc>
+<lastmod>2022-11-01T16:22:35-05:00</lastmod>
 </url>
 </urlset>
