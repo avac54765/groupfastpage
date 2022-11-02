@@ -159,7 +159,7 @@
   
       ,"page0": {
           "title": "Stock",
-          "content": "Merchandise Item Quantity .",
+          "content": "Merchandise Inventory . Click on the quantity button next to the merchandise item to lower its quantity by one! This is a useful tool to keep track of what stock you have left. If someone orders an item, subtract one! . Merchandise Item Quantity .",
           "url": "https://coolcoders.github.io/groupfastpage/stock/project",
           "relUrl": "/stock/project",
           "date": ""
