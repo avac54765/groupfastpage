@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Oders
+title: Orders
 permalink: /orders/project
 type: pbl
 ---
