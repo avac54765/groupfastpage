@@ -194,6 +194,17 @@
   
 
   
+      ,"page5": {
+          "title": "Oders",
+          "content": "Customer Name Item Purchased Quantity .",
+          "url": "https://coolcoders.github.io/groupfastpage/orders/project",
+          "relUrl": "/orders/project",
+          "date": ""
+      }
+      
+  
+
+  
   
 
   
@@ -211,7 +222,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://coolcoders.github.io/groupfastpage/robots.txt",
