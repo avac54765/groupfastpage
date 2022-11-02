@@ -26,8 +26,8 @@ type: pbl
   // prepare HTML defined "result" container for new output
   const resultContainer = document.getElementById("result");
 
-  // keys for quantity reactions
-  const QUANTITY = "quantity";
+ // keys for quantity subtraction
+const QUANTITY = "quantity";
 
 
   // prepare fetch urls
@@ -75,7 +75,7 @@ type: pbl
               quantity_but.innerHTML = row.quantity;  // add fetched "quantity count" to innerHTML
               quantity_but.onclick = function () {
                 // onclick function call with "quantity parameters"
-                reaction(QUANTITY, lower_url+row.id, quantity_but.id);  
+                subtract(QUANTITY, lower_url+row.id, quantity_but.id);  
               };
               quantity.appendChild(quantity_but);  // add "quantity button" to quantity cell
 
@@ -95,7 +95,7 @@ type: pbl
   });
 
   // Reaction function to quantity user actions
-  function reaction(type, put_url, elemID) {
+  function subtract(type, put_url, elemID) {
 
     // fetch the API
     fetch(put_url, put_options)
@@ -110,7 +110,7 @@ type: pbl
       response.json().then(data => {
           console.log(data);
           // quantity updated/decreased
-          if (type === quantity) // quantity data element
+          if (type === QUANTITY) // quantity data element
             document.getElementById(elemID).innerHTML = data.quantity;  // fetched quantity data assigned to quantity Document Object Model (DOM)
           else
             error("unknown type: " + type);  // should never occur
