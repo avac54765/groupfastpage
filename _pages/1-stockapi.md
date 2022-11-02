@@ -27,7 +27,7 @@ type: pbl
   const resultContainer = document.getElementById("result");
 
   // keys for joke reactions
-  const QUANTITY = "quantity";
+  const QUANTITY = stock_data[id]['quantity'];
 
 
   // prepare fetch urls
@@ -66,7 +66,7 @@ type: pbl
 
             // td for item cell
             const stock = document.createElement("td");
-              stock.innerHTML = row.id + ". " + row.stock;  // add fetched data to innerHTML
+              stock.innerHTML = row.id + ". " + row.item;  // add fetched data to innerHTML
 
             // td for quantity cell with onclick actions
             const quantity = document.createElement("td");
