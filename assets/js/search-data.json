@@ -195,7 +195,7 @@
 
   
       ,"page5": {
-          "title": "Oders",
+          "title": "Orders",
           "content": "Customer Name Item Purchased Quantity .",
           "url": "https://coolcoders.github.io/groupfastpage/orders/project",
           "relUrl": "/orders/project",
