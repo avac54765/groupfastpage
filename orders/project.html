@@ -124,11 +124,11 @@ window.onload = wrap_img;
             const tr = document.createElement("tr");
 
             // td for item cell
-            const stock = document.createElement("td");
-              stock.innerHTML = row.id + ". " + row.item + row.quantity;  // add fetched data to innerHTML
+            const orders = document.createElement("td");
+              orders.innerHTML = row.id + ". " + row.item + row.quantity;  // add fetched data to innerHTML
 
             // this builds ALL td's (cells) into tr (row) element
-            tr.appendChild(stock);
+            tr.appendChild(orders);
 
              // this adds all the tr (row) work above to the HTML "result" container
             resultContainer.appendChild(tr);
