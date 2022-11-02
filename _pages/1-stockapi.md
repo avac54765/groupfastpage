@@ -26,8 +26,8 @@ type: pbl
   // prepare HTML defined "result" container for new output
   const resultContainer = document.getElementById("result");
 
-  // keys for joke reactions
-  const QUANTITY = stock_data[id]['quantity'];
+  // keys for quantity reactions
+  const QUANTITY = "quantity";
 
 
   // prepare fetch urls
