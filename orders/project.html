@@ -89,12 +89,8 @@ window.onload = wrap_img;
   // prepare HTML defined "result" container for new output
   const resultContainer = document.getElementById("result");
 
- // keys for quantity subtraction
-const QUANTITY = "quantity";
-
-
   // prepare fetch urls
-  const url = "https://coolcoders.nighthawkcodescrums.gq/api/stocks"; 
+  const url = "https://coolcoders.nighthawkcodescrums.gq/api/orders"; 
   const lower_url = url + "/quantity/";  // quantity
 
    // prepare fetch GET options
@@ -129,22 +125,10 @@ const QUANTITY = "quantity";
 
             // td for item cell
             const stock = document.createElement("td");
-              stock.innerHTML = row.id + ". " + row.item;  // add fetched data to innerHTML
-
-            // td for quantity cell with onclick actions
-            const quantity = document.createElement("td");
-              const quantity_but = document.createElement('button');
-              quantity_but.id = QUANTITY+row.id   // establishes a quantity JS id for cell
-              quantity_but.innerHTML = row.quantity;  // add fetched "quantity count" to innerHTML
-              quantity_but.onclick = function () {
-                // onclick function call with "quantity parameters"
-                subtract(QUANTITY, lower_url+row.id, quantity_but.id);  
-              };
-              quantity.appendChild(quantity_but);  // add "quantity button" to quantity cell
+              stock.innerHTML = row.id + ". " + row.item + row.quantity;  // add fetched data to innerHTML
 
             // this builds ALL td's (cells) into tr (row) element
             tr.appendChild(stock);
-            tr.appendChild(quantity);
 
              // this adds all the tr (row) work above to the HTML "result" container
             resultContainer.appendChild(tr);
