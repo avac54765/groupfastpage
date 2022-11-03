@@ -63,7 +63,7 @@ type: pbl
 
             // td for item cell
             const orders = document.createElement("td");
-              orders.innerHTML = row.id + ". " + row.item + row.quantity;  // add fetched data to innerHTML
+              orders.innerHTML = row.id + ". " + row.item;  // add fetched data to innerHTML
 
             // this builds ALL td's (cells) into tr (row) element
             tr.appendChild(orders);
