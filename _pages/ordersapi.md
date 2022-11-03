@@ -14,7 +14,7 @@ type: pbl
   function orderinput() {
     let customer = prompt("Please enter customer name", "Customer name");
     if (customer != null) {
-      document.getElementbyId("order").innerHTML =
+      document.getElementById("order").innerHTML =
       "Hello "+ customer + "!";
     }
   }
