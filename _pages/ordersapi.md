@@ -34,12 +34,20 @@ import React, { useEffect, useState } from 'react'
 import './App.css'
 import {orders_list} from ./model_orders
 
+  function orderinput() {
+    let customer = prompt("Please enter customer name", "Customer name");
+    if (customer != null) {
+      document.getElementById("order").innerHTML =
+      "New Customer: "+ customer;
+    }
+  }
+
 function AddOrder () {
     const [orders, setOrders] = useState([])
 
     useEffect(() => {
         const fetchData = async () => {
-            const result = await fetch(https://coolcoders.nighthawkcodescrums.gq)
+            const result = await fetch("https://coolcoders.nighthawkcodescrums.gq")
             const jsonResult = result.json()
 
             setOrders(jsonResult)
@@ -53,17 +61,10 @@ function AddOrder () {
             customer
         }
 
-    const result = await fetch(https://coolcoders.nighthawkcodescrums.gq)
+    const result = await fetch("https://coolcoders.nighthawkcodescrums.gq")
     }
 }
   
-  function orderinput() {
-    let customer = prompt("Please enter customer name", "Customer name");
-    if (customer != null) {
-      document.getElementById("order").innerHTML =
-      "New Customer: "+ customer;
-    }
-  }
 
 
 </script>
