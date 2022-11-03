@@ -11,6 +11,33 @@ type: pbl
 <p id="order"></p>
 
 <script>
+import React, { useEffect, useState } from 'react'
+import './App.css'
+import {orders_list} from ./model_orders
+
+function AddOrder () {
+    const [orders, setOrders] = useState([])
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const result = await fetch(https://coolcoders.nighthawkcodescrums.gq)
+            const jsonResult = result.json()
+
+            setOrders(jsonResult)
+        }
+
+        fetchData()
+    }, [])
+
+    const submitOrder = async () => {
+        const myData = {
+            customer
+        }
+
+    const result = await fetch(https://coolcoders.nighthawkcodescrums.gq)
+    }
+}
+  
   function orderinput() {
     let customer = prompt("Please enter customer name", "Customer name");
     if (customer != null) {
@@ -18,6 +45,8 @@ type: pbl
       "New Customer: "+ customer;
     }
   }
+
+
 </script>
 
 <!-- HTML table fragment for page -->
