@@ -44,7 +44,7 @@ function AddOrder () {
 
     const submitOrder = async () => {
         const myData = {
-            customer
+            str(customer)
         }
 
     const result = await fetch("https://coolcoders.nighthawkcodescrums.gq")
