@@ -6,41 +6,25 @@ type: pbl
 ---
 
 
-
-
-<style>
-.button {
-  background-color: #e7e7e7; color: black;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-</style>
-
-<center><button onclick="orderinput()">Add Order</button><center>
-
-
+<center><button onclick="orderinput()">Add Order</button></center>
 
 <p id="order"></p>
 
 <script>
+
+function orderinput() {
+    let customer = prompt("Please enter customer name", "Customer name");
+    if (customer != null) {
+      document.getElementById("order").innerHTML =
+      "New Customer: " + customer;
+    }
+}
+
+
 import React, { useEffect, useState } from 'react'
 import './App.css'
 import {orders_list} from ./model_orders
 
-  function orderinput() {
-    let customer = prompt("Please enter customer name", "Customer name");
-    if (customer != null) {
-      document.getElementById("order").innerHTML =
-      "New Customer: "+ customer;
-    }
-  }
 
 function AddOrder () {
     const [orders, setOrders] = useState([])
@@ -65,9 +49,9 @@ function AddOrder () {
     }
 }
   
-
-
 </script>
+
+
 
 <!-- HTML table fragment for page -->
 <table>
