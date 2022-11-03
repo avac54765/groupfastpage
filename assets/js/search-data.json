@@ -47,7 +47,7 @@
     
         ,"post4": {
             "title": "Fetch of Backend Stocks",
-            "content": "| Overview | Stock API | Jokes API | . Merchandise Item Quantity .",
+            "content": "| Overview | Stock API | Jokes API | . . Merchandise Item Quantity .",
             "url": "https://coolcoders.github.io/groupfastpage/data/stocks",
             "relUrl": "/data/stocks",
             "date": " • Oct 22, 2022"
@@ -159,7 +159,7 @@
   
       ,"page0": {
           "title": "Stock",
-          "content": "Merchandise Inventory . ![](/images/inventory.jpg) Click on the quantity button next to the merchandise item to lower its quantity by one! This is a useful tool to keep track of what stock you have left. If someone orders an item, subtract one! . Merchandise Item Quantity .",
+          "content": "Merchandise Inventory . Click on the quantity button next to the merchandise item to lower its quantity by one! This is a useful tool to keep track of what stock you have left. If someone orders an item, subtract one! . Merchandise Item Quantity .",
           "url": "https://coolcoders.github.io/groupfastpage/stock/project",
           "relUrl": "/stock/project",
           "date": ""
@@ -196,7 +196,7 @@
   
       ,"page5": {
           "title": "Orders",
-          "content": "Add Order . . Customer Name Item Purchased Quantity .",
+          "content": "Add Order . Customer Name Item Purchased Quantity .",
           "url": "https://coolcoders.github.io/groupfastpage/orders/project",
           "relUrl": "/orders/project",
           "date": ""
