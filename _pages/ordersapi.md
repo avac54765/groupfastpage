@@ -20,7 +20,9 @@ function orderinput() {
     }
 }
 
+</script>
 
+<script>
 import React, { useEffect, useState } from 'react'
 import './App.css'
 import {orders_list} from ./model_orders
