@@ -9,8 +9,8 @@ type: pbl
 
 <center>
 
-![emailicon](emailicon.png)
 <img title="emailicon" alt="email icon" src="emailicon.png">
+</center>
 
 <h3 style="text-align:center"> Emails are a great way to contact customers in a professional manner and easily keep track of past conversations. </h3>
 
