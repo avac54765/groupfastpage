@@ -10,10 +10,12 @@ type: pbl
 
 
 
-<center> ![](/images/inventory.jpg) </center>
+
 
 
 <h3 style="text-align:center; font-family:Verdana, Geneva, Tahoma, sans-serif;">Click on the quantity button next to the merchandise item to lower its quantity by one! This is a useful tool to keep track of what stock you have left. If someone orders an item, subtract one!</h3>
+
+<center><IMG SRC="images/inventory.jpg" alt="inventory"></center>
 
 
 <!-- HTML table fragment for page -->

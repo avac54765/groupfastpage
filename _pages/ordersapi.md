@@ -6,7 +6,26 @@ type: pbl
 ---
 
 
-<button style="text-align:center;" onclick="orderinput()">Add Order</button>
+
+
+<style>
+.button {
+  background-color: #e7e7e7; color: black;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+<center><button class="button" onclick="orderinput()">Add Order</button><center>
+
+
 
 <p id="order"></p>
 
