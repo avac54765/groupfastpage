@@ -6,12 +6,12 @@ type: pbl
 ---
 
 
-<button onclick="prompt()">Add Order</button>
+<button style="text-align:center;" onclick="orderinput()">Add Order</button>
 
 <p id="order"></p>
 
 <script>
-  function prompt() {
+  function orderinput() {
     let customer = prompt("Please enter customer name", "Customer name");
     if (customer != null) {
       document.getElementbyId("demo").innerHTML =
