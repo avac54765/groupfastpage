@@ -8,8 +8,7 @@ type: pbl
 <h1 style="background-color:Gainsboro; text-align:center; color:black;" > Want to Contact your Customers?<h1>
 
 
-![site.baseurl](/images/emailicon.png)
-
+<img title="emailicon" alt="email icon" src="/images/emailicon.png">
 
 <h3 style="text-align:center"> Emails are a great way to contact customers in a professional manner and easily keep track of past conversations. </h3>
 
