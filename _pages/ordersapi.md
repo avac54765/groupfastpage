@@ -6,6 +6,20 @@ type: pbl
 ---
 
 
+<button onclick="prompt()">Add Order</button>
+
+<p id="order"></p>
+
+<script>
+  function prompt() {
+    let customer = prompt("Please enter customer name", "Customer name");
+    if (customer != null) {
+      document.getElementbyId("demo").innerHTML =
+      "Hello "+ customer + "!";
+    }
+  }
+</script>
+
 <!-- HTML table fragment for page -->
 <table>
   <thead>
