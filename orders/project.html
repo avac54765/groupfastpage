@@ -69,7 +69,21 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <!-- HTML table fragment for page -->
+        <p><button style="text-align:center;" onclick="orderinput()">Add Order</button></p>
+
+<p id="order"></p>
+
+<script>
+  function orderinput() {
+    let customer = prompt("Please enter customer name", "Customer name");
+    if (customer != null) {
+      document.getElementById("order").innerHTML =
+      "Hello "+ customer + "!";
+    }
+  }
+</script>
+
+<!-- HTML table fragment for page -->
 <table>
   <thead>
   <tr>
