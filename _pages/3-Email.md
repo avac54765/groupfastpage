@@ -8,8 +8,6 @@ type: pbl
 <h1 style="background-color:Gainsboro; text-align:center; color:black;" > Want to Contact your Customers?<h1>
 
 
-<center>
-
 ![](/images/emailicon.png)
 
 

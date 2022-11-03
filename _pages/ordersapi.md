@@ -23,7 +23,7 @@ type: pbl
 }
 </style>
 
-<center><button class="button" onclick="orderinput()">Add Order</button><center>
+<center><button onclick="orderinput()">Add Order</button><center>
 
 
 
