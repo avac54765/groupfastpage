@@ -169,17 +169,6 @@
 
   
       ,"page1": {
-          "title": "Orders",
-          "content": "Customer Orders . Customer Name Items in Order Income . name input here | order input here | income input here | &lt;/table&gt; &lt;/body&gt; &lt;/html&gt; .",
-          "url": "https://coolcoders.github.io/groupfastpage/merchtable/project",
-          "relUrl": "/merchtable/project",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page2": {
           "title": "Contact",
           "content": "Want to Contact your Customers? Emails are a great way to contact customers in a professional manner and easily keep track of past conversations. . Click the button below to see an example email sent to a customer! . . Customer Email Draft .",
           "url": "https://coolcoders.github.io/groupfastpage/merch/project",
@@ -194,7 +183,7 @@
   
 
   
-      ,"page5": {
+      ,"page4": {
           "title": "Orders",
           "content": "New Order . Customer Name: Item Purchased: Quantity: Submit Customer Name Item Purchased Quantity .",
           "url": "https://coolcoders.github.io/groupfastpage/orders/project",
@@ -222,7 +211,7 @@
   
 
   
-      ,"page12": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://coolcoders.github.io/groupfastpage/robots.txt",
