@@ -25,7 +25,7 @@ function orderinput() {
 
 </script>-->
 
-<section id="NewOrder" style="display:block;">
+<section id="NewOrder" style="display:block; text-align:center">
     <form>
         <br>
         <h2>New Order</h2>
