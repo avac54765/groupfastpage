@@ -196,7 +196,7 @@
   
       ,"page5": {
           "title": "Orders",
-          "content": "Add Order . Customer Name Item Purchased Quantity .",
+          "content": "Add Order . &lt;/section&gt; . New Order . Customer Name: Item Purchased: Quantity: Submit Customer Name Item Purchased Quantity .",
           "url": "https://coolcoders.github.io/groupfastpage/orders/project",
           "relUrl": "/orders/project",
           "date": ""

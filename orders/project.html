@@ -85,36 +85,41 @@ function orderinput() {
 
 </script>
 
-<script>
-import React, { useEffect, useState } from 'react'
-import './App.css'
-import {orders_list} from ./model_orders
-
-
-function AddOrder () {
-    const [orders, setOrders] = useState([])
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const result = await fetch("https://coolcoders.nighthawkcodescrums.gq")
-            const jsonResult = result.json()
-
-            setOrders(jsonResult)
-        }
-
-        fetchData()
-    }, [])
-
-    const submitOrder = async () => {
-        const myData = {
-            str(customer)
-        }
-
-    const result = await fetch("https://coolcoders.nighthawkcodescrums.gq")
-    }
-}
-  
+<p>&lt;/section&gt;</p>
+<section id="NewOrder" style="display:block;">
+    <form>
+        <br />
+        <h2>New Order</h2>
+        <label for="customer">Customer Name:</label><br />
+        <input type="text" id="customerid" name="customer" value="" /><br />
+        <label for="item">Item Purchased:</label><br />
+        <input type="text" id="itemid" name="item" value="" /><br /><br />
+        <label for="quantity">Quantity:</label><br />
+        <input type="text" id="quantityid" name="quantity" value="" /><br />
+        <!--button for closing-->
+        <button id="enterorder" type="button">Submit</button>
+        <script> $("#enterorder").click(function() {
+            let customer = document.getElementById("customerid").value;
+            let item = document.getElementById("itemid").value;
+            let quantity = document.getElementById("quantityid").value;
+            let order_url = "https://coolcoders.nighthawkcodescrums.gq/api/orders/" + customer + "/" + item + "/" + quantity;
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", order_url);
+            xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status == 200) {
+              let data = xhr.responseText;
+              console.log(data);
+              console.log(typeof data);
+              if (data == "true\n") {
+                document.getElementById("NewOrder").style.display = "none";
+              };
+            }};
+          xhr.send();
+        });
 </script>
+
+
+
 
 <!-- HTML table fragment for page -->
 <table>
@@ -129,6 +134,7 @@ function AddOrder () {
     <!-- javascript generated data -->
   </tbody>
 </table>
+
 
 <!-- Script is layed out in a sequence (without a function) and will execute when page is loaded -->
 <script>
@@ -230,7 +236,7 @@ function AddOrder () {
   }
 
 </script>
-
+</form></section>
 
       </div>
     </main><footer class="site-footer h-card">
